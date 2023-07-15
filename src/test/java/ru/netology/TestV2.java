@@ -2,10 +2,10 @@ package ru.netology;
 
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
-
 import static io.restassured.RestAssured.given;
 
 public class TestV2 {
+
     @Test
     void shouldReturnDemoAccounts() {
 
@@ -18,7 +18,7 @@ public class TestV2 {
 
                 .then()
                 .statusCode(200)
-                .header("Content-Type", "aplication/json; charset=utf-8")
+                .header("Content-Type", "application/json; charset=utf-8")
                 .contentType(ContentType.JSON)
         ;
     }
